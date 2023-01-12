@@ -20,7 +20,7 @@ import { useTranslation } from "react-i18next";
 import { SettingsData } from "../hooks/useSettings";
 import { useMode } from "../hooks/useMode";
 import { getDayString, useTodays } from "../hooks/useTodays";
-import { Twemoji } from "@teuteuf/react-emoji-render";
+import Emoji from "react-emoji-render";
 
 const MAX_TRY_COUNT = 6;
 
@@ -128,7 +128,7 @@ export function Game({ settingsData, updateSettings }: GameProps) {
           type="button"
           onClick={() => setHideImageMode(false)}
         >
-          <Twemoji
+          <Emoji
             text={t("showCountry")}
             options={{ className: "inline-block" }}
           />
@@ -144,7 +144,7 @@ export function Game({ settingsData, updateSettings }: GameProps) {
               })
             }
           >
-            <Twemoji text="↪️" className="text-xl" />
+            <Emoji text="↪️" className="text-xl" />
           </button>
         )}
         <img
@@ -170,7 +170,7 @@ export function Game({ settingsData, updateSettings }: GameProps) {
               })
             }
           >
-            <Twemoji text="↩️" className="text-xl" />
+            <Emoji text="↩️" className="text-xl" />
           </button>
         )}
       </div>
@@ -180,7 +180,7 @@ export function Game({ settingsData, updateSettings }: GameProps) {
           type="button"
           onClick={() => setRotationMode(false)}
         >
-          <Twemoji
+          <Emoji
             text={t("cancelRotation")}
             options={{ className: "inline-block" }}
           />
@@ -211,7 +211,7 @@ export function Game({ settingsData, updateSettings }: GameProps) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Twemoji
+              <Emoji
                 text={t("showOnGoogleMaps")}
                 options={{ className: "inline-block" }}
               />
@@ -229,7 +229,7 @@ export function Game({ settingsData, updateSettings }: GameProps) {
                 className="rounded font-bold p-1 flex items-center justify-center border-2 uppercase my-0.5 hover:bg-gray-50 active:bg-gray-100 dark:hover:bg-slate-800 dark:active:bg-slate-700"
                 type="submit"
               >
-                <Twemoji
+                <Emoji
                   text="🌍"
                   options={{ className: "inline-block" }}
                   className="flex items-center justify-center"

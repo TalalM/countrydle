@@ -1,6 +1,6 @@
 import Modal from "react-modal";
 import React, { useEffect, useState } from "react";
-import { Twemoji } from "@teuteuf/react-emoji-render";
+import Emoji from "react-emoji-render";
 
 interface PanelProps {
   title: string;
@@ -44,7 +44,7 @@ export function Panel({
             {title}
           </h2>
           <button type="button" onClick={close}>
-            <Twemoji text="❌" />
+            <Emoji text="❌" />
           </button>
         </header>
         {children}
