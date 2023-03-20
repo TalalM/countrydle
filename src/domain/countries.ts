@@ -292,7 +292,6 @@ export const countries: Country[] = [
     longitude: 133.775136,
     name: "Australia",
   },
-  { code: "AW", latitude: 12.52111, longitude: -69.968338, name: "Aruba" },
   { code: "AZ", latitude: 40.143105, longitude: 47.576927, name: "Azerbaijan" },
   {
     code: "BA",
